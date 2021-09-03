@@ -1,5 +1,7 @@
 package com.cc.java;
 
+import java.util.Arrays;
+
 public class App {
     public static void main(String[] args) {
       // // Deklaration: int
@@ -47,47 +49,47 @@ public class App {
 		
 		
 //		// Deklaration | Chars
-		// char [] letters = {'d','c','a','A','b'};
+		char [] letters = {'d','B','c','a','A','b'};
 		
-		// ausgabe("---- vor Sortierung: ----");
+		ausgabe("---- vor Sortierung: ----");
 
-		// for (int i = 0; i < letters.length; i++) {
-		// 	ausgabe(String.valueOf(letters[i]));	
-		// }
+		for (int i = 0; i < letters.length; i++) {
+			ausgabe(String.valueOf(letters[i]));	
+		}
 //		
 		// Sortierfkt. --> sortiertes Array
 		
-		// Arrays.sort(letters);  // Statische Klasse | Methode
+		Arrays.sort(letters);  // Statische Klasse | Methode
 		
-		// ausgabe("---- nach Sortierung: ----");
-		// for (int i = 0; i < letters.length; i++) {
-		// 	ausgabe(String.valueOf(letters[i]));	
-		// }
+		ausgabe("---- nach Sortierung: ----");
+		for (int i = 0; i < letters.length; i++) {
+			ausgabe(String.valueOf(letters[i]));	
+		}
 
 //		
-		// ausgabe("");
-		// ausgabe("---- Suche: erfolgreich ----");
+		ausgabe("");
+		ausgabe("---- Suche: erfolgreich ----");
 		
-		// // ... danach Suche (1)
-		// int searchIndex = Arrays.binarySearch(letters,'a');
-		// ausgabe("searchIndex: " + searchIndex);
+		// ... danach Suche (1)
+		int searchIndex = Arrays.binarySearch(letters,'a');
+		ausgabe("searchIndex: " + searchIndex);
 		
-		// ausgabe("");
-		// ausgabe("---- Suche: erfolglos ----");
+		ausgabe("");
+		ausgabe("---- Suche: erfolglos ----");
 		
 		// // ... danach Suche (2)
-		// searchIndex = Arrays.binarySearch(letters,'e');
-		// ausgabe("searchIndex: " + searchIndex);  // -(length+1)
-		// // .... isInArray()
+		searchIndex = Arrays.binarySearch(letters,'e');
+		ausgabe("searchIndex: " + searchIndex);  // -(length+1)
+		// .... isInArray()
 		
-		// ausgabe("");
-		// ausgabe("---- fill() ----");
+		ausgabe("");
+		ausgabe("---- fill() ----");
 		
-		// //.. Array füllen
-		// Arrays.fill(letters, '0');
-		// for (int i = 0; i < letters.length; i++) {
-		// 	ausgabe(String.valueOf(letters[i]));
-		// }
+		//.. Array füllen
+		Arrays.fill(letters, '0');
+		for (int i = 0; i < letters.length; i++) {
+			ausgabe(String.valueOf(letters[i]));
+		}
     
 
     }
