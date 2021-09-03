@@ -85,7 +85,7 @@ public class App {
 		// for (int i = 0; i < letters.length; i++) {
 		// 	ausgabe((letters[i]));
 		// }
-s
+
     }
 
     private static void ausgabe(String outStr) {
