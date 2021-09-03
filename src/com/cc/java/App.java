@@ -1,8 +1,10 @@
 package com.cc.java;
+import java.util.Arrays;
 
 public class App {
     public static void main(String[] args) {
-      // // Deklaration: int
+
+      	// // Deklaration: int
 		// int [] intArr = new int [4];
 		// ausgabe("Länge Array: " + intArr.length);	
 		
@@ -17,10 +19,9 @@ public class App {
 		// 	ausgabe("Element: " + i + " : "+ intArr[i]);
 		// }
 			
-		
+
 		// Deklaration: String
-		//String [] strArr = new String [2];
-				
+		// String [] strArr = new String [2];
 		// String [] strArr = {"Hallo","Holger"};
 		
 		// for (int i = 0; i < strArr.length; i++) {
@@ -29,9 +30,9 @@ public class App {
 		
 		
 		// Mehrdimensionale Arrays
-		//String [][] strMdArr = new String [2][2];
+		// String [][] strMdArr = new String [2][2];
 		
-		// String [][] strMdArr = {{"Max","Mustermann"},{"Karin","Musterfrau"}};
+		// String [][] strMdArr = {{"Max","Mustermann"},{"Maxine","Musterfrau"}};
 		
 		// {{0,2,1},{1,0,0}}  x|y|z
 		
@@ -49,50 +50,52 @@ public class App {
 //		// Deklaration | Chars
 		// char [] letters = {'d','c','a','A','b'};
 		
-		// ausgabe("---- vor Sortierung: ----");
-
+		// ausgabe("");
+		// ausgabe("---- vor Sortierung: ");
 		// for (int i = 0; i < letters.length; i++) {
-		// 	ausgabe(String.valueOf(letters[i]));	
+		// 	ausgabe(letters[i]);	
 		// }
-//		
-		// Sortierfkt. --> sortiertes Array
-		
+
+		// // Sortierfkt. --> sortiertes Array
 		// Arrays.sort(letters);  // Statische Klasse | Methode
-		
-		// ausgabe("---- nach Sortierung: ----");
+
+		// ausgabe("");
+		// ausgabe("---- nach Sortierung: ");
 		// for (int i = 0; i < letters.length; i++) {
-		// 	ausgabe(String.valueOf(letters[i]));	
+		// 	ausgabe(letters[i]);	
 		// }
 
-//		
 		// ausgabe("");
 		// ausgabe("---- Suche: erfolgreich ----");
 		
-		// // ... danach Suche (1)
+		// // // ... danach Suche (1)
 		// int searchIndex = Arrays.binarySearch(letters,'a');
-		// ausgabe("searchIndex: " + searchIndex);
-		
-		// ausgabe("");
+		// ausgabe(" searchIndex: " + searchIndex);
+	
 		// ausgabe("---- Suche: erfolglos ----");
-		
-		// // ... danach Suche (2)
+		// // // ... danach Suche (2)
 		// searchIndex = Arrays.binarySearch(letters,'e');
-		// ausgabe("searchIndex: " + searchIndex);  // -(length+1)
-		// // .... isInArray()
+		// ausgabe(" searchIndex: " + searchIndex);  // -(length+1)
+		// // // .... isInArray()
 		
-		// ausgabe("");
 		// ausgabe("---- fill() ----");
 		
 		// //.. Array füllen
 		// Arrays.fill(letters, '0');
 		// for (int i = 0; i < letters.length; i++) {
-		// 	ausgabe(String.valueOf(letters[i]));
+		// 	ausgabe((letters[i]));
 		// }
-    
-
+s
     }
 
     private static void ausgabe(String outStr) {
         System.out.println(outStr);
     }
+
+	// überladene Methode
+	private static void ausgabe(char outChar) {
+		System.out.print(outChar);
+    }
+
+
 }
